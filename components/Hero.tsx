@@ -35,32 +35,36 @@ const Hero: React.FC = () => {
              <span>System_Ready: v3.0</span>
            </div>
 
-           <h1 className="text-5xl md:text-7xl font-black text-brand-white leading-[0.9] tracking-tighter animate-in slide-in-from-bottom-6 fade-in duration-1000 delay-100">
-             LA NUEVA <br />
-             <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-orange via-red-500 to-brand-orange bg-300% animate-gradient">NOBLEZA DIGITAL</span>
+           <h1 className="text-5xl md:text-7xl font-black text-brand-white leading-[0.9] tracking-tighter animate-in slide-in-from-bottom-6 fade-in duration-1000 delay-100 uppercase">
+             La IA ya gobierna el mercado. <br />
+             <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-orange via-red-500 to-brand-orange bg-300% animate-gradient">Métrica.one decide a quién favorece.</span>
            </h1>
 
            <p className="text-lg md:text-xl text-brand-white/70 max-w-xl leading-relaxed animate-in slide-in-from-bottom-8 fade-in duration-1000 delay-200">
-             Construimos la infraestructura de crecimiento para que tu marca reine en el caos del mercado. <br/>
-             <strong className="text-brand-white">Menos vanidad, más margen.</strong>
+             Señales invisibles · Decisiones anticipadas · Asignación exclusiva
            </p>
 
-           <div className="flex flex-col sm:flex-row gap-4 mt-4 w-full sm:w-auto animate-in slide-in-from-bottom-10 fade-in duration-1000 delay-300">
-             <a 
-               href="#cta-final" 
-               onClick={scrollToCta}
-               className="group relative px-8 py-4 bg-brand-orange text-brand-black font-bold uppercase tracking-widest clip-path-tech hover:bg-white transition-all duration-300 flex items-center justify-center gap-3 shadow-[0_0_20px_rgba(249,115,22,0.4)] hover:shadow-[0_0_30px_rgba(255,255,255,0.4)]"
-             >
-               <Sword size={18} className="group-hover:rotate-45 transition-transform" />
-               Iniciar Conquista
-             </a>
-             <a 
-               href="#metodologia"
-               className="px-8 py-4 border border-brand-white/20 text-brand-white font-mono text-sm uppercase tracking-widest hover:border-brand-cyan hover:text-brand-cyan transition-colors flex items-center justify-center gap-2 bg-brand-black/50 backdrop-blur-sm"
-             >
-               <Cpu size={16} />
-               Ver Protocolos
-             </a>
+           <div className="flex flex-col items-center lg:items-start gap-4 mt-4 animate-in slide-in-from-bottom-10 fade-in duration-1000 delay-300">
+             <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
+               <a 
+                 href="#cta-final" 
+                 onClick={scrollToCta}
+                 className="group relative px-8 py-4 bg-brand-orange text-brand-black font-bold uppercase tracking-widest clip-path-tech hover:bg-white transition-all duration-300 flex items-center justify-center gap-3 shadow-[0_0_20px_rgba(249,115,22,0.4)] hover:shadow-[0_0_30px_rgba(255,255,255,0.4)]"
+               >
+                 <Sword size={18} className="group-hover:rotate-45 transition-transform" />
+                 Solicitar acceso
+               </a>
+               <a 
+                 href="#metodologia"
+                 className="px-8 py-4 border border-brand-white/20 text-brand-white font-mono text-sm uppercase tracking-widest hover:border-brand-cyan hover:text-brand-cyan transition-colors flex items-center justify-center gap-2 bg-brand-black/50 backdrop-blur-sm"
+               >
+                 <Cpu size={16} />
+                 Ver Protocolos
+               </a>
+             </div>
+             <p className="text-[10px] font-mono text-brand-white/40 uppercase tracking-[0.2em]">
+               No es una plataforma pública. Es infraestructura privada.
+             </p>
            </div>
 
            <div className="flex items-center gap-6 text-xs text-brand-white/30 font-mono mt-4 animate-in slide-in-from-bottom-12 fade-in duration-1000 delay-500">

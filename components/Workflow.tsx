@@ -4,35 +4,35 @@ import { Compass, Cpu, TrendingUp, ArrowRight } from 'lucide-react';
 const steps = [
   {
     id: '01',
-    title: 'Estrategia y Arquitectura',
+    title: 'Observación',
     icon: <Compass size={32} className="text-brand-orange" />,
-    desc: 'Analizamos tu E-commerce y detectamos oportunidades de LTV y CAC.',
+    desc: 'El sistema observa patrones y señales invisibles en el mercado.',
     points: [
-      'Auditoría de LTV y CAC.',
-      'Optimización de rentabilidad neta.',
-      'Plan de objetivos $LTV:CAC$.'
+      'Detección de intención.',
+      'Rastreo de movimientos.',
+      'Identificación de urgencia.'
     ]
   },
   {
     id: '02',
-    title: 'Orquestación del Sistema',
+    title: 'Validación y Cálculo',
     icon: <Cpu size={32} className="text-brand-cyan" />,
-    desc: 'Configuramos canales de adquisición y estrategias de retención que realmente convierten.',
+    desc: 'La intención se valida y el valor de cada decisión se calcula con precisión.',
     points: [
-      'Implementación de SUPLE.',
-      'Flujos de re-compra automatizados.',
-      'Dashboards de Margen en tiempo real.'
+      'Validación de presupuesto.',
+      'Cálculo de probabilidad.',
+      'Score de ejecución.'
     ]
   },
   {
     id: '03',
-    title: 'Análisis y Escalamiento',
+    title: 'Asignación y Ejecución',
     icon: <TrendingUp size={32} className="text-brand-white" />,
-    desc: 'Monitorizamos y optimizamos continuamente para seguir escalando la rentabilidad.',
+    desc: 'La decisión se asigna y el resultado se ejecuta sin fricción.',
     points: [
-      'Optimización de reducción de costos.',
-      'Escalado de campañas por ROI.',
-      'Detección de nuevas oportunidades.'
+      'Asignación exclusiva.',
+      'Ejecución automática.',
+      'Garantía de resultado.'
     ]
   }
 ];
@@ -41,17 +41,17 @@ const Workflow: React.FC = () => {
   return (
     <section className="w-full py-24 px-6 bg-brand-charcoal relative overflow-hidden border-t border-brand-border">
       {/* Background Tech Lines - Softer opacity */}
-      <div className="absolute inset-0 opacity-5 pointer-events-none" 
-           style={{ backgroundImage: 'linear-gradient(0deg, transparent 24%, #F97316 25%, #F97316 26%, transparent 27%, transparent 74%, #38BDF8 75%, #38BDF8 76%, transparent 77%, transparent), linear-gradient(90deg, transparent 24%, #F97316 25%, #F97316 26%, transparent 27%, transparent 74%, #38BDF8 75%, #38BDF8 76%, transparent 77%, transparent)', backgroundSize: '50px 50px' }}>
+      <div className="absolute inset-0 opacity-5 pointer-events-none"
+        style={{ backgroundImage: 'linear-gradient(0deg, transparent 24%, #F97316 25%, #F97316 26%, transparent 27%, transparent 74%, #38BDF8 75%, #38BDF8 76%, transparent 77%, transparent), linear-gradient(90deg, transparent 24%, #F97316 25%, #F97316 26%, transparent 27%, transparent 74%, #38BDF8 75%, #38BDF8 76%, transparent 77%, transparent)', backgroundSize: '50px 50px' }}>
       </div>
 
       <div className="max-w-7xl mx-auto relative z-10">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-5xl font-black text-brand-white mb-4 hover-glow-brand cursor-default transition-all">
-            PROTOCOLOS DE EJECUCIÓN
+            PROTOCOLOS DE CONTROL
           </h2>
           <p className="text-brand-orange font-mono text-sm tracking-widest uppercase bg-brand-orange/5 inline-block px-3 py-1 rounded">
-            // Nuestra forma de trabajar: Rápida, Efectiva y Rentable
+            Sin competencia. Sin ruido. Sin exposición pública.
           </p>
         </div>
 
@@ -61,7 +61,7 @@ const Workflow: React.FC = () => {
 
           {steps.map((step, index) => (
             <div key={index} className="relative z-10 flex flex-col items-center text-center group">
-              
+
               {/* Icon Node */}
               <div className="w-24 h-24 bg-brand-black border-2 border-brand-border rounded-full flex items-center justify-center mb-8 shadow-lg group-hover:border-brand-orange group-hover:shadow-soft-glow transition-all duration-300 z-10">
                 {step.icon}

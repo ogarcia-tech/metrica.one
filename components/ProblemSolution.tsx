@@ -36,26 +36,36 @@ const ProblemSolution: React.FC = () => {
       <div className="absolute inset-0 bg-[linear-gradient(rgba(56,189,248,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(56,189,248,0.03)_1px,transparent_1px)] bg-[size:40px_40px] pointer-events-none"></div>
 
       <div className="max-w-6xl mx-auto relative z-10">
-        
+
         {/* Header - Narrative Link */}
         <div className="text-center mb-16 space-y-6">
-          <div className="inline-block px-3 py-1 rounded bg-red-500/10 border border-red-500/20 text-red-500 font-mono text-xs tracking-widest uppercase mb-2">
-            ⚠️ Diagnóstico del Sistema Actual
+          <div className="inline-block px-3 py-1 rounded bg-brand-orange/10 border border-brand-orange/20 text-brand-orange font-mono text-xs tracking-widest uppercase mb-2">
+            Metrica.one: Definición
           </div>
           <h2 className="text-3xl md:text-5xl font-extrabold text-brand-white uppercase tracking-tighter hover-glow-brand cursor-default transition-all">
-            Tu modelo de adquisición <br/>
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-brand-orange">
-              tiene una fuga de capital.
+            Un sistema.<br />
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-orange to-red-500">
+              No una herramienta.
             </span>
           </h2>
-          <p className="text-brand-white/60 max-w-2xl mx-auto font-mono text-sm md:text-base bg-brand-charcoal/50 p-4 rounded border-l-2 border-brand-orange">
-            &lt;system_alert&gt; Gastar en Ads sin tener "Ingeniería de Margen" es como echar gasolina a un coche con el tanque agujereado. Primero reparamos el sistema, luego aceleramos. &lt;/system_alert&gt;
-          </p>
+          <div className="max-w-3xl mx-auto space-y-6">
+            <p className="text-brand-white/80 text-lg leading-relaxed">
+              Métrica.one detecta señales reales de decisión: <br />
+              <span className="text-brand-cyan font-mono font-bold">intención · urgencia · presupuesto · comportamiento</span>
+            </p>
+            <div className="bg-brand-charcoal/50 p-6 rounded border border-brand-orange/30 relative overflow-hidden group">
+              <div className="relative z-10 text-brand-white/70 italic text-sm md:text-base">
+                Cuando una decisión emerge, no se publica, no se subasta, no se comparte. <br />
+                <span className="text-brand-orange font-bold text-2xl mt-2 block not-italic">Se asigna.</span>
+              </div>
+              <div className="absolute inset-0 bg-brand-orange/5 translate-x-full group-hover:translate-x-0 transition-transform duration-700"></div>
+            </div>
+          </div>
         </div>
 
         {/* Comparison Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-12 relative">
-          
+
           {/* VS Badge (Absolute Center) */}
           <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-20 hidden md:flex items-center justify-center">
             <div className="w-16 h-16 bg-brand-black border-2 border-brand-orange rounded-full flex items-center justify-center shadow-soft-glow z-30">
@@ -71,7 +81,7 @@ const ProblemSolution: React.FC = () => {
                 <XCircle className="text-red-400" size={24} />
                 <h3 className="text-lg font-bold text-brand-white tracking-widest uppercase">Agencia Tradicional</h3>
               </div>
-              
+
               <div className="space-y-8">
                 {features.map((item, idx) => (
                   <div key={idx} className="relative pl-4 border-l-2 border-brand-border group-hover:border-red-500/20 transition-colors">
@@ -102,7 +112,7 @@ const ProblemSolution: React.FC = () => {
                   Ecosistema <span className="text-brand-cyan">Métrica.One</span>
                 </h3>
               </div>
-              
+
               <div className="space-y-8">
                 {features.map((item, idx) => (
                   <div key={idx} className="relative pl-4 border-l-2 border-brand-cyan">

@@ -4,23 +4,23 @@ import { Target, Bot, BarChart4, PieChart } from 'lucide-react';
 const reasons = [
   {
     icon: <Target className="text-brand-cyan" size={32} />,
-    title: "Ingeniería de Margen",
-    desc: "No solo hacemos marketing, creamos sistemas. Dejamos de lado la vanidad para centrarnos en la arquitectura financiera de tu crecimiento."
+    title: "Instrumento, no Producto",
+    desc: "La tecnología no es el producto. Es el instrumento para ejecutar decisiones de mercado con precisión absoluta."
   },
   {
     icon: <Bot className="text-brand-orange" size={32} />,
-    title: "IA + Automatización",
-    desc: "Usamos tecnología para que el LTV crezca y el CAC se estabilice. Escalabilidad sin aumentar la plantilla humana innecesariamente."
+    title: "Decisiones Ejecutadas",
+    desc: "Métrica.one no vende IA. Vende resultados. Decisiones que ya han sido filtradas, validadas y están listas para impactar."
   },
   {
     icon: <BarChart4 className="text-brand-white" size={32} />,
-    title: "Datos Reales",
-    desc: "Optimizamos cada acción con datos de rentabilidad neta, no con suposiciones. Si no se puede medir en euros, no nos interesa."
+    title: "Pago por Resultado",
+    desc: "Si no hay resultado, el sistema no cobra. El riesgo es nuestro, el control es tuyo."
   },
   {
     icon: <PieChart className="text-brand-cyan" size={32} />,
-    title: "Foco en el Margen",
-    desc: "Nos enfocamos en lo que te queda en el bolsillo, no en lo que facturas brutamente. Tu salud financiera es nuestra prioridad."
+    title: "Exclusividad Radical",
+    desc: "No escalamos con volumen, escalamos con valor. Solo operamos con un número limitado de socios por sector."
   }
 ];
 
@@ -28,18 +28,19 @@ const WhyUs: React.FC = () => {
   return (
     <section className="w-full py-24 px-6 bg-brand-black border-y border-brand-border">
       <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-16 items-center">
-        
+
         {/* Left: Headline & Manifesto */}
         <div className="w-full lg:w-1/3 space-y-8">
           <div className="inline-block border border-brand-orange/30 bg-brand-orange/5 px-3 py-1 rounded text-brand-orange text-xs font-mono tracking-widest uppercase mb-2">
-            Ventaja Táctica
+            Poder Tecnológico
           </div>
-          <h2 className="text-4xl md:text-5xl font-black text-brand-white leading-tight hover-glow-brand cursor-default transition-all">
-            ¿Por qué elegir <br/>
-            <span className="text-brand-cyan">el camino difícil?</span>
+          <h2 className="text-4xl md:text-5xl font-black text-brand-white leading-tight hover-glow-brand cursor-default transition-all uppercase">
+            La tecnología <br />
+            <span className="text-brand-cyan">es el servicio.</span>
           </h2>
           <p className="text-brand-white/60 text-lg">
-            Porque el camino fácil (quemar dinero en ads sin sistema) ya no funciona. Elegirnos es elegir la <span className="text-brand-orange font-bold">verdad dolorosa</span> sobre la <span className="text-brand-cyan font-bold">mentira cómoda</span>.
+            Métrica.one no es una herramienta que usas. <br />
+            Es un <span className="text-brand-orange font-bold uppercase">sistema que decide por ti.</span>
           </p>
           <div className="h-1 w-20 bg-gradient-to-r from-brand-orange to-brand-cyan"></div>
         </div>
