@@ -25,7 +25,7 @@ const Footer: React.FC = () => {
         <div className="lg:col-span-1 space-y-4">
           <img src="/logo-metrica.png" alt="Metrica.one Logo" className="h-10 md:h-14 w-auto object-contain mb-2" />
           <p className="text-brand-white/50 text-xs leading-relaxed">
-            Agencia de IA y Sistemas de Crecimiento. Métrica procesa, los Vasallos ejecutan.
+            Infraestructura privada de asignación de decisiones. Métrica procesa, los Vasallos ejecutan.
           </p>
           <div className="flex gap-4 pt-2">
             <Linkedin size={18} className="text-brand-white/40 hover:text-brand-orange cursor-pointer transition-colors" />

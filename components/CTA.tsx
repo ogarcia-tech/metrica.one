@@ -91,11 +91,11 @@ const CTA: React.FC = () => {
             </div>
 
             <div className="text-center mb-6">
-              <p className="text-brand-white/40 text-sm line-through decoration-brand-orange/50 mb-1">Valor Real: 1.200€</p>
-              <div className="flex items-center justify-center gap-2">
-                <span className="text-5xl font-black text-brand-white tracking-tighter">350€</span>
-                <span className="text-xs text-brand-white/40 font-mono text-left leading-none">+ IVA<br />PAGO ÚNICO</span>
-              </div>
+              <p className="text-brand-orange text-sm font-bold uppercase tracking-widest mb-2">Acceso Nivel 1</p>
+              <h3 className="text-2xl font-black text-brand-white mb-2">Validación de Operador</h3>
+              <p className="text-brand-white/50 text-xs font-mono">
+                El sistema verifica tu ticket medio, modelo de negocio y capacidad de ejecución.
+              </p>
             </div>
 
             <button className="w-full group relative overflow-hidden rounded bg-brand-orange text-brand-black font-bold text-lg uppercase tracking-widest py-4 hover:bg-white transition-all duration-300 shadow-[0_0_20px_rgba(249,115,22,0.4)] hover:shadow-[0_0_30px_rgba(255,255,255,0.4)] active:scale-95">
@@ -107,18 +107,7 @@ const CTA: React.FC = () => {
             </button>
 
             <div className="mt-6 flex flex-col items-center gap-4 text-[10px] text-brand-white/30 font-mono uppercase">
-              <div className="flex justify-between w-full items-center">
-                <div className="flex items-center gap-1">
-                  <Lock size={10} /> Pago Seguro Stripe
-                </div>
-                <div className="flex items-center gap-1 text-brand-orange/70 animate-pulse">
-                  <div className="w-1.5 h-1.5 rounded-full bg-brand-orange"></div>
-                  3 Slots disponibles esta semana
-                </div>
-              </div>
-              <p className="text-brand-white/50 text-center tracking-[0.2em] font-bold">
-                No es una promesa. Es una asignación.
-              </p>
+              <p className="text-center font-bold tracking-widest">Sin coste inicial · Sin calendario público</p>
             </div>
           </div>
 

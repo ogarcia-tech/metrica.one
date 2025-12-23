@@ -14,19 +14,19 @@ const ProblemSolution: React.FC = () => {
       icon: <Cpu size={20} />,
       label: 'Ejecución',
       old: 'Manual, lenta y con errores',
-      new: 'Automatización + Supervisión Humana'
+      new: 'Asignación automática + Ejecución externa'
     },
     {
       icon: <BrainCircuit size={20} />,
       label: 'Decisiones',
       old: 'Intuición y Excel mensual',
-      new: 'Data Real-Time Unificada'
+      new: 'Señales de intención validadas'
     },
     {
       icon: <Rocket size={20} />,
       label: 'Escalado',
       old: 'Lineal (Más personal = Más coste)',
-      new: 'Exponencial (Sistemas 3.0)'
+      new: 'Escalado por control de acceso'
     }
   ];
 
@@ -56,7 +56,7 @@ const ProblemSolution: React.FC = () => {
             <div className="bg-brand-charcoal/50 p-6 rounded border border-brand-orange/30 relative overflow-hidden group">
               <div className="relative z-10 text-brand-white/70 italic text-sm md:text-base">
                 Cuando una decisión emerge, no se publica, no se subasta, no se comparte. <br />
-                <span className="text-brand-orange font-bold text-2xl mt-2 block not-italic">Se asigna.</span>
+                <span className="text-brand-orange font-bold text-2xl mt-2 block not-italic">Se asigna bajo acceso controlado.</span>
               </div>
               <div className="absolute inset-0 bg-brand-orange/5 translate-x-full group-hover:translate-x-0 transition-transform duration-700"></div>
             </div>

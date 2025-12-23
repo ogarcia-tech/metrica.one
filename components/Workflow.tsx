@@ -4,13 +4,13 @@ import { Compass, Cpu, TrendingUp, ArrowRight } from 'lucide-react';
 const steps = [
   {
     id: '01',
-    title: 'Observación',
+    title: 'Activación de Protocolo',
     icon: <Compass size={32} className="text-brand-orange" />,
-    desc: 'El sistema observa patrones y señales invisibles en el mercado.',
+    desc: 'No todo operador accede al sistema.',
     points: [
-      'Detección de intención.',
-      'Rastreo de movimientos.',
-      'Identificación de urgencia.'
+      'Condiciones de acceso.',
+      'Tipo de decisiones asignadas.',
+      'Nivel de exclusividad y método económico.'
     ]
   },
   {

@@ -5,49 +5,48 @@ import { Rocket, Cpu, ShieldAlert, Check, Zap } from 'lucide-react';
 const services: Service[] = [
   {
     id: '01',
-    name: 'ESCALY',
-    subtitle: '(La Estrategia)',
-    concept: 'Marketing de Margen: El plano del sistema.',
-    humanTruth: 'Métrica quiere conquistar todo el mapa. Nosotros conquistamos las palabras clave que generan ingresos reales.',
-    price: 'Desde 1.800€/mes',
-    description: 'La estrategia que alimenta tu máquina de crecimiento. Diseñamos y ejecutamos campañas de SEO, SEM y CRO enfocadas en un solo objetivo: generar leads cualificados que se convierten en ingresos predecibles. No creamos tráfico por vanidad. Creamos sistemas de adquisición donde cada euro invertido se traduce en margen neto medible.',
+    name: 'PROTOCOLO DE CAPTURA',
+    subtitle: '(Antes: Escaly)',
+    concept: 'Definición de decisiones entrantes.',
+    humanTruth: 'El sistema filtra el ruido. Solo capturamos señales con intención de compra validada.',
+    price: 'Acceso Nivel 1',
+    description: 'Protocolo encargado de identificar y capturar decisiones en el mercado. No buscamos tráfico, buscamos transacciones esperando a ser asignadas. Este protocolo define qué tipo de leads tienen permiso para entrar en tu pipeline.',
     details: [
-      'Estrategia de adquisición rentable',
-      'Optimización continua basada en data',
-      'Tráfico que se convierte en margen real'
+      'Filtrado de señales de baja calidad',
+      'Captura de intención transaccional',
+      'Validación de liquidez del prospecto'
     ],
-    highlight: 'ROI Predecible desde el primer mes'
+    highlight: 'Solo entra lo que convierte'
   },
   {
     id: '02',
-    name: 'SUPLE',
-    subtitle: '(El Sistema Operativo)',
-    concept: 'Piloto Automático de Margen: Tu sistema operativo de crecimiento.',
-    humanTruth: 'Tu negocio en piloto automático. Cualificamos leads al 80% y reducimos costes de soporte un 70%.',
-    price: 'Desde 3.000€/mes',
-    description: 'El cerebro operativo que nunca duerme. Implementamos sistemas de automatización críticos con n8n + IA para conectar marketing, ventas y soporte en un solo ecosistema inteligente. Olvídate de los cuellos de botella manuales. Tu negocio opera como una máquina de precisión suiza, 24/7.',
+    name: 'PROTOCOLO DE ORQUESTACIÓN',
+    subtitle: '(Antes: Suple)',
+    concept: 'Validación y priorización lógica.',
+    humanTruth: 'No todos los leads valen lo mismo. El sistema decide quién merece tu tiempo ahora mismo.',
+    price: 'Acceso Nivel 2',
+    description: 'El cerebro lógico que procesa las decisiones capturadas. Automatiza la cualificación, el enriquecimiento de datos y la priorización de oportunidades. El sistema decide si una oportunidad debe ser atendida por humanos o nutrida por la máquina.',
     details: [
-      '80% → Cualificación automática de leads',
-      '70% → Reducción de coste de soporte',
-      '100% → Flujos predecibles que escalan tu margen'
+      'Cualificación automática multicriterio',
+      'Priorización por probabilidad de cierre',
+      'Enrutamiento inteligente de decisiones'
     ],
-    highlight: 'Tu negocio en piloto automático. Tú decides cuándo intervenir.'
+    highlight: 'Orden absoluto en el caos'
   },
   {
     id: '03',
-    name: 'CONVERSIA',
-    subtitle: '(El Guardián)',
-    concept: 'Agente IA de Retención: Tu primera línea de conversión.',
-    humanTruth: 'Libera a tu equipo. Resuelve el 80% de dudas frecuentes y guía a la conversión sin fricción.',
-    price: 'Desde 500€/mes',
-    description: 'Tu equipo comercial digital que nunca descansa. Un agente de IA conversacional integrado en tu web que resuelve consultas, cualifica leads en tiempo real y guía a cada visitante hacia la conversión con precisión quirúrgica. Libera a tu equipo humano para cerrar ventas, no para responder las mismas 20 preguntas cada día.',
+    name: 'PROTOCOLO DE INTERACCIÓN',
+    subtitle: '(Antes: Conversia)',
+    concept: 'Ejecución y cierre.',
+    humanTruth: 'La interacción ocurre en el momento exacto. Sin latencia, sin fricción humana innecesaria.',
+    price: 'Acceso Nivel 3',
+    description: 'El brazo ejecutor. Agentes de IA que interactúan, resuelven dudas y cierran acuerdos preliminares o agendan reuniones definitivas para los operadores humanos. La interacción es instantánea, 24/7 y sin desviaciones del guion ganador.',
     details: [
-      'Resuelve el 80% de consultas automáticamente',
-      'Cualifica leads en tiempo real',
-      'Disponible 24/7, sin descansos ni vacaciones',
-      'Aprende de cada interacción'
+      'Respuesta inmediata 24/7',
+      'Ejecución de guiones de cierre',
+      'Agendamiento directo en calendario'
     ],
-    highlight: 'Cada interacción cuenta. Cada visitante recibe atención inmediata.'
+    highlight: 'Ejecución perfecta, siempre.'
   }
 ];
 
@@ -60,17 +59,17 @@ const Services: React.FC = () => {
 
   return (
     <section id="servicios" className="w-full py-24 px-6 bg-brand-black relative scroll-mt-32">
-       <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-brand-border to-transparent"></div>
-       
+      <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-brand-border to-transparent"></div>
+
       <div className="max-w-6xl mx-auto">
         <h2 className="text-4xl font-black text-brand-white mb-12 flex items-center gap-4 uppercase tracking-tighter hover-glow-brand cursor-default transition-all">
-          <span className="text-brand-orange text-5xl">///</span> El Arsenal de Métrica
+          <span className="text-brand-orange text-5xl">///</span> Protocolos Operativos
         </h2>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
           {services.map((service, index) => (
             <div key={service.id} className={`group relative bg-brand-charcoal border border-brand-border p-8 flex flex-col justify-between transition-all duration-300 hover:shadow-[0_0_20px_rgba(255,95,0,0.1)] ${expandedId === service.id ? 'border-brand-orange' : 'hover:border-brand-orange'}`}>
-              
+
               {/* Header */}
               <div className="mb-6">
                 <div className="flex justify-between items-start mb-4">
@@ -90,13 +89,13 @@ const Services: React.FC = () => {
 
               {/* Human Truth */}
               <div className="bg-brand-black/50 p-4 border border-brand-border mb-6">
-                 <p className="text-xs text-brand-orange uppercase font-bold mb-2 flex items-center gap-2">
-                   <span className="w-2 h-2 bg-brand-orange rounded-full animate-pulse"></span>
-                   La Verdad Humana:
-                 </p>
-                 <p className="text-sm text-brand-white/70">
-                   {service.humanTruth}
-                 </p>
+                <p className="text-xs text-brand-orange uppercase font-bold mb-2 flex items-center gap-2">
+                  <span className="w-2 h-2 bg-brand-orange rounded-full animate-pulse"></span>
+                  La Verdad Humana:
+                </p>
+                <p className="text-sm text-brand-white/70">
+                  {service.humanTruth}
+                </p>
               </div>
 
               {/* EXPANDED CONTENT */}
@@ -107,7 +106,7 @@ const Services: React.FC = () => {
                       {service.description}
                     </p>
                   )}
-                  
+
                   {service.details && (
                     <ul className="space-y-2 mb-4">
                       {service.details.map((detail, idx) => (
@@ -134,7 +133,7 @@ const Services: React.FC = () => {
               <div className="mt-auto pt-6 border-t border-brand-border group-hover:border-brand-orange/30 transition-colors">
                 <div className="flex justify-between items-center">
                   <span className="text-brand-white font-mono font-bold">{service.price}</span>
-                  <button 
+                  <button
                     onClick={() => toggleExpand(service.id)}
                     className="text-brand-orange text-sm font-bold uppercase hover:underline flex items-center gap-1"
                   >

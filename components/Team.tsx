@@ -8,7 +8,7 @@ const teamMembers: TeamMember[] = [
   {
     id: 1,
     kind: "human",
-    role: "Consultoría de Negocio",
+    role: "Supervisor Estratégico",
     title: "El Gran Estratega",
     name: "Vasallo Consultor",
     mount: "Búho Mecánico Gigante",
@@ -18,7 +18,7 @@ const teamMembers: TeamMember[] = [
   {
     id: 2,
     kind: "human",
-    role: "Project Manager ROI Ads",
+    role: "Auditor de Campañas",
     title: "El Centinela de Proyectos",
     name: "Vasallo PM",
     mount: "Rinoceronte Acorazado",
@@ -28,7 +28,7 @@ const teamMembers: TeamMember[] = [
   {
     id: 3,
     kind: "human",
-    role: "SEO & Estrategia",
+    role: "Analista de Señales",
     title: "El Señor del SEO",
     name: "Vasallo SEO",
     mount: "Topo Gigante con gafas",
@@ -38,7 +38,7 @@ const teamMembers: TeamMember[] = [
   {
     id: 4,
     kind: "human",
-    role: "Dev & Automation Manager",
+    role: "Arquitecto de Protocolos",
     title: "El Inquisidor de Procesos",
     name: "Vasallo Auto",
     mount: "Guepardo Cibernético",
@@ -115,8 +115,8 @@ const MemberCard: React.FC<{ member: TeamMember }> = ({ member }) => {
     <div className="group relative h-[400px] overflow-hidden border border-brand-border bg-brand-charcoal rounded-lg shadow-card">
       {/* Type Label */}
       <div className={`absolute top-4 left-4 z-20 px-2 py-0.5 rounded text-[10px] font-mono font-bold tracking-widest uppercase border ${member.kind === 'human'
-          ? 'bg-brand-orange/20 border-brand-orange text-brand-orange'
-          : 'bg-brand-cyan/20 border-brand-cyan text-brand-cyan'
+        ? 'bg-brand-orange/20 border-brand-orange text-brand-orange'
+        : 'bg-brand-cyan/20 border-brand-cyan text-brand-cyan'
         }`}>
         {member.kind === 'human' ? 'HUMANO' : 'UNIDAD'}
       </div>
@@ -169,7 +169,7 @@ const Team: React.FC = () => {
             El Gremio
           </h2>
           <p className="text-brand-orange font-mono">
-            // 4 HUMANOS · 6 UNIDADES DEL SISTEMA · SUPERVISIÓN HUMANA OBLIGATORIA
+            // SUPERVISIÓN HUMANA OBLIGATORIA: Los humanos no deciden. Verifican, auditan y corrigen anomalías.
           </p>
         </div>
 

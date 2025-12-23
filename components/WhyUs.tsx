@@ -14,8 +14,8 @@ const reasons = [
   },
   {
     icon: <BarChart4 className="text-brand-white" size={32} />,
-    title: "Pago por Resultado",
-    desc: "Si no hay resultado, el sistema no cobra. El riesgo es nuestro, el control es tuyo."
+    title: "Modelo de Asignación",
+    desc: "Métrica.one no cobra por promesas. La monetización combina: acceso al sistema, uso de asignaciones exclusivas y participación en resultados verificados."
   },
   {
     icon: <PieChart className="text-brand-cyan" size={32} />,
