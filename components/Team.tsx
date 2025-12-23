@@ -8,86 +8,96 @@ const teamMembers: TeamMember[] = [
   {
     id: 1,
     kind: "human",
-    role: "Supervisor Estratégico",
+    role: "Supervisor de Integridad",
     title: "El Gran Estratega",
     name: "Vasallo Consultor",
     mount: "Búho Mecánico Gigante",
-    power: "Visión de Retorno",
+    power: "Auditoría de Asignación",
     imageStr: 'https://image.pollinations.ai/prompt/giant%20mechanical%20owl%20cyberpunk%20armor%20glowing%20orange%20eyes?nologo=true'
   },
   {
     id: 2,
     kind: "human",
-    role: "Auditor de Campañas",
+    role: "Auditor de Outcomes",
     title: "El Centinela de Proyectos",
     name: "Vasallo PM",
     mount: "Rinoceronte Acorazado",
-    power: "Escudo Anti-Caos",
+    power: "Verificación de cierres",
     imageStr: 'https://image.pollinations.ai/prompt/heavy%20armored%20cyberpunk%20rhinoceros%20mecha%20tank%20neon%20defense?nologo=true'
   },
   {
     id: 3,
     kind: "human",
-    role: "Analista de Señales",
+    role: "Inquisidor de SLA",
     title: "El Señor del SEO",
     name: "Vasallo SEO",
     mount: "Topo Gigante con gafas",
-    power: "Dominio del CTR",
+    power: "Penaliza latencia",
     imageStr: 'https://image.pollinations.ai/prompt/cyberpunk%20giant%20mole%20with%20tech%20goggles%20underground%20neon?nologo=true'
   },
   {
     id: 4,
     kind: "human",
-    role: "Arquitecto de Protocolos",
+    role: "Custodio de Protocolos",
     title: "El Inquisidor de Procesos",
     name: "Vasallo Auto",
     mount: "Guepardo Cibernético",
-    power: "Precisión Operativa",
+    power: "Gobernanza de acceso",
     imageStr: 'https://image.pollinations.ai/prompt/mechanical%20cheetah%20robot%20running%20neon%20cyberpunk?nologo=true'
   },
   // UNIDADES DEL SISTEMA (6)
   {
     id: 5,
     kind: "unit",
-    role: "Unidad de Datos",
-    title: "La Oráculo de los Datos",
-    name: "UNIT-ORCL",
+    role: "Unidad de Señales",
+    title: "El Oráculo de Señales",
+    name: "UNIT-SIGL",
     mount: "Esfinge Digital",
-    power: "Visión Predictiva",
+    power: "Detecta intención real",
     imageStr: 'https://image.pollinations.ai/prompt/mystical%20cyberpunk%20sphinx%20holographic%20data%20glowing%20blue%20neon?nologo=true'
   },
   {
     id: 6,
     kind: "unit",
-    role: "Unidad de Infraestructura",
-    title: "Arquitecto de la Torre",
-    name: "UNIT-ARCH",
-    mount: "Entidad de Núcleo",
-    power: "Nada se rompe",
-    imageStr: 'https://image.pollinations.ai/prompt/cyberpunk%20golem%20monster%20made%20of%20server%20racks%20and%20wires?nologo=true'
+    role: "Unidad de Scoring",
+    title: "El Juez del Score",
+    name: "UNIT-SCOR",
+    mount: "Entidad Neural",
+    power: "Prioriza oportunidades",
+    imageStr: "file:///Users/metricaweb/.gemini/antigravity/brain/c40f6596-12d0-4c8a-bad5-10b1937b7360/unit_interpreter_interprete_1766168928178.png"
   },
   {
     id: 7,
     kind: "unit",
-    role: "Unidad Narrativa",
-    title: "El Bardo del Copywriting",
-    name: "UNIT-NARR",
-    mount: "Entidad Sonora",
-    power: "Storytelling Persistente",
-    imageStr: 'https://image.pollinations.ai/prompt/aggressive%20cyberpunk%20war%20boar%20playing%20a%20futuristic%20electric%20lute%20guitar%20neon%20dark?nologo=true&seed=42'
+    role: "Unidad de Asignación",
+    title: "El Señor de la Asignación",
+    name: "UNIT-ASGN",
+    mount: "Entidad de Núcleo",
+    power: "Exclusividad 1:1",
+    imageStr: 'https://image.pollinations.ai/prompt/cyberpunk%20golem%20monster%20made%20of%20server%20racks%20and%20wires?nologo=true'
   },
   {
     id: 8,
     kind: "unit",
-    role: "Unidad de Experiencia",
-    title: "Hechicera de Visibilidad",
-    name: "UNIT-VIS",
+    role: "Unidad de Verificación",
+    title: "El Verificador",
+    name: "UNIT-VERI",
     mount: "Entidad Visual",
-    power: "Atención Controlada",
+    power: "Outcome verificado",
     imageStr: 'https://image.pollinations.ai/prompt/three%20headed%20hydra%20cyberpunk%20neon%20dragon?nologo=true'
   },
   {
     id: 9,
+    kind: "unit",
+    role: "Unidad de Monetización",
+    title: "El Recaudador",
+    name: "UNIT-FEES",
+    mount: "Entidad Sonora",
+    power: "Acceso · Asignación · %",
+    imageStr: 'https://image.pollinations.ai/prompt/aggressive%20cyberpunk%20war%20boar%20playing%20a%20futuristic%20electric%20lute%20guitar%20neon%20dark?nologo=true&seed=42'
+  },
+  {
+    id: 10,
     kind: "unit",
     role: "Unidad de Seguridad",
     title: "El Centinela",
@@ -95,16 +105,6 @@ const teamMembers: TeamMember[] = [
     mount: "Guardia de Núcleo",
     power: "Anomalías Detectadas",
     imageStr: "file:///Users/metricaweb/.gemini/antigravity/brain/c40f6596-12d0-4c8a-bad5-10b1937b7360/unit_sentinel_sentinela_1766168911060.png"
-  },
-  {
-    id: 10,
-    kind: "unit",
-    role: "Unidad Cognitiva",
-    title: "El Intérprete",
-    name: "UNIT-INTP",
-    mount: "Entidad Neural",
-    power: "Decisiones sin Ruido",
-    imageStr: "file:///Users/metricaweb/.gemini/antigravity/brain/c40f6596-12d0-4c8a-bad5-10b1937b7360/unit_interpreter_interprete_1766168928178.png"
   }
 ];
 
